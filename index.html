@@ -1,0 +1,73 @@
+<!DOCTYPE html> <!-- Declara o tipo de documento HTML -->
+<html lang="en"> <!-- Inicia a estrutura do documento HTML -->
+  <head> <!-- Começa a seção do cabeçalho do documento -->
+    <!-- Define a configuração de visualização inicial do dispositivo -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alarm App</title> <!-- Título da página -->
+    <!-- Importa o arquivo de estilos de ícones do Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <!-- Importa as fontes do Google Fonts para estilização -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto+Mono:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Importa o arquivo de estilos personalizados -->
+    <link rel="stylesheet" href="style.css" />
+  </head> <!-- Final da seção do cabeçalho -->
+  <body> <!-- Começa a seção do corpo do documento -->
+    <!-- Container principal -->
+    <div class="wrapper">
+      <!-- Visor do timer -->
+      <div class="timer-display">00:00:00</div>
+      <div class="container">
+        <!-- Inputs para definir a hora e o minuto do alarme -->
+        <div class="inputs">
+          <input
+            type="number"
+            id="hourInput"
+            placeholder="00"
+            min="0"
+            max="23"
+          />
+          <input
+            type="number"
+            id="minuteInput"
+            placeholder="00"
+            min="0"
+            max="59"
+          />
+        </div>
+        <!-- Botão para adicionar o alarme -->
+        <button id="set">Add Alarm</button>
+        <!-- Container para exibir os alarmes ativos -->
+        <div class="activeAlarms"></div>
+      </div>
+    </div>
+    <!-- Importa o arquivo de script JavaScript -->
+    <script src="script.js"></script>
+  </body> <!-- Final da seção do corpo -->
+</html> <!-- Final do documento HTML -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

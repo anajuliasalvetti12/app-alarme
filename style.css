@@ -1,0 +1,107 @@
+* {
+  padding: 0; /* Remove o preenchimento padrão */
+  margin: 0; /* Remove as margens padrão */
+  box-sizing: border-box; /* Inclui as bordas e o preenchimento no cálculo do tamanho total do elemento */
+  font-family: "Poppins", sans-serif; /* Define a fonte padrão para todos os elementos */
+}
+
+body {
+  background-color: #377dff; /* Define a cor de fundo para o corpo da página */
+}
+
+.hide {
+  display: none; /* Oculta o elemento */
+}
+
+.wrapper {
+  background-color: #ffffff; /* Define a cor de fundo para o contêiner principal */
+  width: 90%; /* Define a largura do contêiner principal */
+  max-width: 31.25em; /* Define a largura máxima do contêiner principal */
+  padding: 3.12em 5em; /* Adiciona preenchimento interno ao contêiner principal */
+  position: absolute; /* Define a posição absoluta */
+  transform: translateX(-50%); /* Move o contêiner para o centro horizontal da tela */
+  left: 50%; /* Define a posição horizontal do contêiner */
+  top: 1em; /* Define a posição vertical do contêiner */
+  border-radius: 0.5em; /* Adiciona bordas arredondadas ao contêiner */
+}
+
+.timer-display {
+  font-size: 2.18em; /* Define o tamanho da fonte do visor do timer */
+  text-align: center; /* Alinha o texto ao centro */
+  font-family: "Roboto Mono", monospace; /* Define a fonte para o visor do timer */
+}
+
+.inputs {
+  display: flex; /* Exibe os elementos em linha */
+  align-items: center; /* Alinha os elementos verticalmente ao centro */
+  justify-content: center; /* Alinha os elementos horizontalmente ao centro */
+  gap: 1em; /* Define o espaçamento entre os elementos */
+  margin-top: 2em; /* Define a margem superior */
+}
+
+.inputs input {
+  width: 2.8em; /* Define a largura dos campos de entrada */
+  font-size: 1.3em; /* Define o tamanho da fonte dos campos de entrada */
+  border: 1px solid #000000; /* Adiciona uma borda aos campos de entrada */
+  border-radius: 0.3em; /* Adiciona bordas arredondadas aos campos de entrada */
+  padding: 0.4em 0.2em; /* Adiciona preenchimento interno aos campos de entrada */
+}
+
+#set {
+  background-color: #377dff; /* Define a cor de fundo do botão */
+  border: none; /* Remove a borda do botão */
+  padding: 0.9em 1.8em; /* Adiciona preenchimento interno ao botão */
+  display: block; /* Exibe o botão como bloco */
+  margin: 1.5em auto 0 auto; /* Define as margens do botão */
+  border-radius: 2em; /* Adiciona bordas arredondadas ao botão */
+  color: #ffffff; /* Define a cor do texto do botão */
+}
+
+.alarm {
+  display: grid; /* Exibe os elementos em um layout de grade */
+  grid-template-columns: 8fr 2fr 2fr; /* Define as colunas da grade */
+  gap: 1em; /* Define o espaçamento entre os elementos */
+  margin-top: 1.5em; /* Define a margem superior */
+  align-items: center; /* Alinha os elementos verticalmente ao centro */
+  border-bottom: 1px solid #898f9b; /* Adiciona uma borda inferior */
+  padding-bottom: 0.6em; /* Adiciona preenchimento interno na parte inferior */
+}
+
+.alarm input[type="checkbox"] {
+  appearance: none; /* Remove o estilo padrão do checkbox */
+  height: 2em; /* Define a altura do checkbox */
+  width: 3.75em; /* Define a largura do checkbox */
+  background-color: #e2e2ec; /* Define a cor de fundo do checkbox */
+  border-radius: 1.25em; /* Adiciona bordas arredondadas ao checkbox */
+  position: relative; /* Define a posição relativa */
+  cursor: pointer; /* Altera o cursor ao passar sobre o checkbox */
+  outline: none; /* Remove o contorno ao focar */
+}
+
+.alarm input[type="checkbox"]:before {
+  position: absolute; /* Define a posição absoluta */
+  content: ""; /* Adiciona conteúdo ao pseudo-elemento */
+  background-color: #757683; /* Define a cor de fundo do pseudo-elemento */
+  height: 1.43em; /* Define a altura do pseudo-elemento */
+  width: 1.43em; /* Define a largura do pseudo-elemento */
+  border-radius: 50%; /* Adiciona bordas arredondadas ao pseudo-elemento */
+  top: 0.25em; /* Define a posição vertical do pseudo-elemento */
+  left: 0.25em; /* Define a posição horizontal do pseudo-elemento */
+}
+
+.alarm input[type="checkbox"]:checked {
+  background-color: #d2e2ff; /* Define a cor de fundo quando o checkbox está marcado */
+}
+
+.alarm input[type="checkbox"]:checked:before {
+  background-color: #377dff; /* Define a cor de fundo do pseudo-elemento quando o checkbox está marcado */
+  left: 2em; /* Move o pseudo-elemento para a direita quando o checkbox está marcado */
+}
+
+.deleteButton {
+  background-color: transparent; /* Define a cor de fundo do botão como transparente */
+  font-size: 1.5em; /* Define o tamanho da fonte do botão */
+  color: #377dff; /* Define a cor do texto do botão */
+  border: none; /* Remove a borda do botão */
+  cursor: pointer; /* Altera o cursor ao passar sobre o botão */
+}
